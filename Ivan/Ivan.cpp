@@ -1,49 +1,45 @@
-﻿#include <iostream>
+#include <iostream>
 #include <vector>
-#include <cmath>
 #include <string>
 
-std::string RSA_encrypt_decrypt(const std::string& input) {
+std::vector<long long> encrypt(const std::string& message, const std::string& key_word, int& n) {
     int p = 61;
     int q = 53;
-    int n = p * q;
+    n = p * q;
     int phi = (p - 1) * (q - 1);
 
-    int e = 3;
-    while (e < phi) {
-        int a = e, b = phi, gcd = 0;
-        while (b != 0) {
-            int temp = b;
-            b = a % b;
-            a = temp;
-        }
-        gcd = a;
-        if (gcd == 1) break;
-        e += 2;
+    int e = 0;
+    for (char c : key_word) {
+        e += c;
     }
-
-    int d = 1;
-    while ((d * e) % phi != 1) {
-        d++;
-    }
-
-    std::cout << "Открытый ключ (e, n): (" << e << ", " << n << ")\n";
-    std::cout << "Закрытый ключ (d, n): (" << d << ", " << n << ")\n";
+    e = (e % (phi - 2)) + 2;
 
     std::vector<long long> encrypted;
-    for (char c : input) {
+    for (char c : message) {
         long long enc = 1;
         for (int i = 0; i < e; i++) {
             enc = (enc * c) % n;
         }
         encrypted.push_back(enc);
     }
+    return encrypted;
+}
 
-    std::cout << "Зашифрованное сообщение: ";
-    for (long long c : encrypted) {
-        std::cout << c << " ";
+std::string decrypt(const std::vector<long long>& encrypted, const std::string& key_word, int n) {
+    int p = 61;
+    int q = 53;
+    int phi = (p - 1) * (q - 1);
+
+    int e = 0;
+    for (char c : key_word) {
+        e += c;
     }
-    std::cout << "\n";
+    e = (e % (phi - 2)) + 2;
+
+    int d = 1;
+    while ((d * e) % phi != 1) {
+        d++;
+    }
 
     std::string decrypted;
     for (long long c : encrypted) {
@@ -53,8 +49,5 @@ std::string RSA_encrypt_decrypt(const std::string& input) {
         }
         decrypted.push_back(static_cast<char>(dec));
     }
-
-    std::cout << "Расшифрованное сообщение: " << decrypted << "\n";
-
     return decrypted;
 }
