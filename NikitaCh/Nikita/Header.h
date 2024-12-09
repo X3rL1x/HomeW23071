@@ -10,7 +10,6 @@
 using namespace std;
 
 // Объявление функций шифрования и дешифрования
-template<typename T> T Input(const int mode, const int mi, const int ma, const int foi);
 vector<long long> encrypt(const string& message, const string& key_word, int& n);
 string decrypt(const vector<long long>& encrypted, const string& key_word, int n);
 
