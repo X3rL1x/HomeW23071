@@ -1,0 +1,6 @@
+﻿  Igor.cpp
+C:\HomeW23071\NikitaCh\Nikita\Igor.cpp(11,19): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\HomeW23071\NikitaCh\Nikita\Igor.cpp(30,19): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  Source1.cpp
+  Создание кода...
+  Nikita.vcxproj -> C:\HomeW23071\NikitaCh\Nikita\x64\Debug\Nikita.exe
