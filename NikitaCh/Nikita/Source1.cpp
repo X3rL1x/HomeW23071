@@ -11,12 +11,12 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	string text = "ILOVEGUBKINUNIVERSITY";
 	string code;
-	string key = "ABCFIJSIJUHWHC";
-	cout << "Output XOR code" << endl;
+	string key = "ABCFSDCSVWG";
+	cout << "Output Playfair code" << endl;
 	code = encryptPlayfair(text, key);
 	cout << code << endl;
-	cout << "Output XOR decrypt" << endl;
-	code = decryptPlayfair(text, key);
+	cout << "Output Playfair decrypt" << endl;
+	code = decryptPlayfair(code, key);
 	cout << code << endl;
 	return 0;
 }

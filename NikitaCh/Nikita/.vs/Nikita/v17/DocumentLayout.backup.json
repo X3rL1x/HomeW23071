@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\HomeW23071\\NikitaCh\\Nikita\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2179E491-388F-464A-B99C-DBEF34771653}|Nikita.vcxproj|C:\\HomeW23071\\NikitaCh\\Nikita\\Playfair\u0421ipher_YakAA2307.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2179E491-388F-464A-B99C-DBEF34771653}|Nikita.vcxproj|solutionrelative:Playfair\u0421ipher_YakAA2307.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2179E491-388F-464A-B99C-DBEF34771653}|Nikita.vcxproj|C:\\HomeW23071\\NikitaCh\\Nikita\\Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2179E491-388F-464A-B99C-DBEF34771653}|Nikita.vcxproj|solutionrelative:Source1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2179E491-388F-464A-B99C-DBEF34771653}|Nikita.vcxproj|C:\\HomeW23071\\NikitaCh\\Nikita\\Playfair\u0421ipher_YakAA2307.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2179E491-388F-464A-B99C-DBEF34771653}|Nikita.vcxproj|solutionrelative:Playfair\u0421ipher_YakAA2307.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2179E491-388F-464A-B99C-DBEF34771653}|Nikita.vcxproj|C:\\HomeW23071\\NikitaCh\\Nikita\\Header.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +30,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Source1.cpp",
               "DocumentMoniker": "C:\\HomeW23071\\NikitaCh\\Nikita\\Source1.cpp",
               "RelativeDocumentMoniker": "Source1.cpp",
               "ToolTip": "C:\\HomeW23071\\NikitaCh\\Nikita\\Source1.cpp",
               "RelativeToolTip": "Source1.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-09T20:15:37.483Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Playfair\u0421ipher_YakAA2307.cpp",
               "DocumentMoniker": "C:\\HomeW23071\\NikitaCh\\Nikita\\Playfair\u0421ipher_YakAA2307.cpp",
               "RelativeDocumentMoniker": "Playfair\u0421ipher_YakAA2307.cpp",
               "ToolTip": "C:\\HomeW23071\\NikitaCh\\Nikita\\Playfair\u0421ipher_YakAA2307.cpp",
               "RelativeToolTip": "Playfair\u0421ipher_YakAA2307.cpp",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAcwE8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAHoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-09T20:16:03.132Z",
               "EditorCaption": ""
