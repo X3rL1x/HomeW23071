@@ -21,7 +21,7 @@ int main() {
 	setlocale(LC_ALL, "Russian");
 	string text = "ILOVEGUBKINUNIVERSITY";
 	string code;
-	string key = "123";
+	string key = "DASFG";
 	cout << "Output XOR code" << endl;
 	code = encrypt(text,key);
 	cout << code << endl;

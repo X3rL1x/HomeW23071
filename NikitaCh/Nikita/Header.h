@@ -10,8 +10,8 @@
 using namespace std;
 
 // Объявление функций шифрования и дешифрования
-vector<long long> encrypt(const string& message, const string& key_word, int& n);
-string decrypt(const vector<long long>& encrypted, const string& key_word, int n);
+string encrypt(const std::string& message, const std::string& key_word);
+string decrypt(const std::string& encrypted, const std::string& key_word);
 
 // Другие объявления функций для шифрования (например, RSA, Виженера, Плейфейр)
 // string rsa_encrypt(const string& plaintext, const string& rsa_key);
