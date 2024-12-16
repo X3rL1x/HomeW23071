@@ -136,6 +136,9 @@
   <ItemGroup>
     <ClInclude Include="HomeW23071.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="war.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

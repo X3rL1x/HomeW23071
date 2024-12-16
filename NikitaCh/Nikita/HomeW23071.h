@@ -1,6 +1,4 @@
 #pragma once
-#ifndef ENCRYPTION_UTILS_H
-#define ENCRYPTION_UTILS_H
 
 #include <string>
 #include <utility>
@@ -10,6 +8,7 @@ using namespace std;
 template<typename Func, typename... Args>
 auto measure_time(Func&& func, Args&&... args);
 template<typename T> T Input(const int mode, const int mi, const int ma, const int foi);
+void readFileToString(const string& filename, string& str);
 void XOR(string text, string key);
 void Playfair(string text, string key);
 void RSA(string text);
@@ -31,5 +30,3 @@ string encryptMessage(const string& key, const string& message);
 string decryptMessage(const string& key, const string& encryptedMessage);
 string xor_encrypt(const string& plaintext, const string& key);
 string xor_decrypt(const string& ciphertext, const string& key);
-
-#endif // ENCRYPTION_UTILS_H

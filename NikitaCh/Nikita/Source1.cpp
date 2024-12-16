@@ -2,6 +2,7 @@
 #include <string>
 #include <sstream>
 #include <chrono>
+#include <fstream>
 #include <unordered_map>
 #include "HomeW23071.h"
 
@@ -136,13 +137,14 @@ void start()
 			<< "1. Ввести текст для шифрования" << endl
 			<< "2. Ввести ключ для шифрования" << endl
 			<< "3. Протестировать XOR" << endl
-			<< "4. Протестирровать Playfair (шифрует только латиницу)" << endl
-			<< "5. Протестировать RSA (работает только с ключом на латинице)" << endl
+			<< "4. Протестирровать Playfair" << endl
+			<< "5. Протестировать RSA" << endl
 			<< "6. Протестировать Gronsfeld" << endl
-			<< "7. Выбрать тестовые входные данные (текст и ключ)" << endl
+			<< "7. Выбрать тестовые входные данные" << endl
+			<< "8. Считать файл" << endl
 			<< "0. Выход" << endl;
 
-		c = Input<int>(1, 0, 7, 0);
+		c = Input<int>(1, 0, 8, 0);
 
 		switch (c)
 		{
@@ -173,6 +175,10 @@ void start()
 		case 7:
 			cin.clear();
 			test(intext, inkey);
+			break;
+		case 8:
+			cin.clear();
+			readFileToString("war1.txt", intext);
 			break;
 		case 0:
 			cin.clear();
@@ -242,7 +248,7 @@ void test(string &intext, string &inkey) {
 		<< "6. 1000 пробелов с ключом пробел" << endl
 		<< "0. Выход" << endl;
 
-	l = Input<int>(1, 0, 7, 0);
+	l = Input<int>(1, 0, 6, 0);
 	switch (l)
 	{
 	case 1:
@@ -289,6 +295,22 @@ void insertAlternatingChars(string& original, char char1, char char2, int count)
 	for (int i = 0; i < count; ++i) {
 		original += (i % 2 == 0) ? char1 : char2;
 	} 
+}
+void readFileToString(const string& filename, string& str) {
+	ifstream inputFile(filename); 
+	if (!inputFile) {
+		cerr << "Ошибка открытия файла: " << filename << endl;
+	}
+
+	string fileContent;
+	string line;
+
+	while (std::getline(inputFile, line)) {
+		fileContent += line + "    ";
+	}
+
+	inputFile.close();
+	str = fileContent;
 }
 int main() 
 {
