@@ -4,6 +4,7 @@
 
 // Функция для генерации ключей (публичного и приватного)
 void generate_keys(int& e, int& d, int& n) {
+    setlocale(LC_ALL, "RUS");
     int p = 61;  // Простое число
     int q = 53;  // Простое число
     n = p * q;   // Модуль
@@ -33,6 +34,7 @@ void generate_keys(int& e, int& d, int& n) {
 // Функция шифрования
 std::string encrypt(const std::string& message, int e, int n) {
     std::ostringstream encrypted;
+    setlocale(LC_ALL, "RUS");
 
     for (char c : message) {
         long long enc = 1;
@@ -47,6 +49,7 @@ std::string encrypt(const std::string& message, int e, int n) {
 
 // Функция расшифровки
 std::string decrypt(const std::string& encrypted, int d, int n) {
+    setlocale(LC_ALL, "RUS");
     std::istringstream iss(encrypted);
     std::string decrypted;
     long long c;

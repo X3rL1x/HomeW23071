@@ -4,6 +4,7 @@
 #include <chrono>
 #include <fstream>
 #include <unordered_map>
+#include <windows.h>
 #include "HomeW23071.h"
 
 using namespace std;
@@ -170,7 +171,7 @@ void start()
 			break;
 		case 6:
 			cin.clear();
-			Vijener(intext,inkey);
+			Gronsfeld(intext,inkey);
 			break;
 		case 7:
 			cin.clear();
@@ -226,7 +227,7 @@ void RSA(string text){
 	code = measure_time(decrypt, code, d, n);
 	cout << code << endl << endl;
 }
-void Vijener(string text, string key) {
+void Gronsfeld(string text, string key) {
 	string code;
 	cout << "Вывод кода и времени:" << endl;
 	code = measure_time(encryptMessage, key, text);
@@ -314,7 +315,9 @@ void readFileToString(const string& filename, string& str) {
 }
 int main() 
 {
-	setlocale(LC_ALL, "Russian");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	setlocale(0, "rus");
 	start();
 	return 0;
 }

@@ -1,10 +1,3 @@
-﻿  Igor.cpp
-C:\HomeW23071\NikitaCh\Nikita\Igor.cpp(11,23): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-C:\HomeW23071\NikitaCh\Nikita\Igor.cpp(30,23): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  PlayfairСipher_YakAA2307.cpp
-  Source1.cpp
-  Xor.cpp
-C:\HomeW23071\NikitaCh\Nikita\Xor.cpp(8,15): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
-  Создание кода...
-C:\HomeW23071\NikitaCh\Nikita\Source1.cpp(128,1): warning C4715: Input<int>: значение возвращается не при всех путях выполнения
+﻿  Source1.cpp
+C:\HomeW23071\NikitaCh\Nikita\Source1.cpp(129,1): warning C4715: Input<int>: значение возвращается не при всех путях выполнения
   Nikita.vcxproj -> C:\HomeW23071\NikitaCh\Nikita\x64\Debug\Nikita.exe

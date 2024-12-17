@@ -7,6 +7,7 @@
 
     // Функция для шифрования сообщения
     string encryptMessage(const string& key, const string& message) {
+        setlocale(LC_ALL, "RUS");
         string encryptedMessage;
         int keyLength = key.length();
 
@@ -26,6 +27,7 @@
 
     // Функция для дешифрования сообщения
     string decryptMessage(const string& key, const string& encryptedMessage) {
+        setlocale(LC_ALL, "RUS");
         string decryptedMessage;
         int keyLength = key.length();
 

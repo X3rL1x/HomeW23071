@@ -4,6 +4,7 @@
 #include "HomeW23071.h"
 
 std::string xor_encrypt(const std::string& key, const std::string& text) {
+  setlocale(LC_ALL, "RUS");
   std::string result = "";
   int key_len = key.length();
   for (size_t i = 0; i < text.length(); ++i) {

@@ -12,7 +12,7 @@ void readFileToString(const string& filename, string& str);
 void XOR(string text, string key);
 void Playfair(string text, string key);
 void RSA(string text);
-void Vijener(string text, string key);
+void Gronsfeld(string text, string key);
 void start();
 void InText(string& intext);
 void InKey(string& inkey);
